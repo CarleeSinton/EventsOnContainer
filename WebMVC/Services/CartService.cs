@@ -133,7 +133,6 @@ namespace WebMVC.Services
                 order.OrderItems.Add(new OrderItem()
                 {
                     ProductId = int.Parse(x.ProductId),
-
                     PictureUrl = x.PictureUrl,
                     ProductName = x.ProductName,
                     Units = x.Quantity,
@@ -144,8 +143,6 @@ namespace WebMVC.Services
 
             return order;
         }
-
-
 
         async Task<string> GetUserTokenAsync()
         {

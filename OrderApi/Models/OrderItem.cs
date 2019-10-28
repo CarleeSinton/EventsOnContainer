@@ -13,11 +13,9 @@ namespace OrderApi.Models
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int Id { get; set; }
-
         public string ProductName { get; set; }
         public string PictureUrl { get; set; }
         public decimal UnitPrice { get; set; }
-
         public int Units { get; set; }
         public int ProductId { get; private set; }
 
